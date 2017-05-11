@@ -1,0 +1,21 @@
+body{
+    background-color: #638a79;
+    background-image: url("img/body-bg.png");
+    background-repeat: repeat-x;
+    background-position: fixed;
+}
+
+.content {}
+.content .content-top {}
+.content .content-bottom {}
+.content .content-middle {}
+	
+h1 { }
+h2 { }
+	
+div.block-1 {}
+div.block-2 {}
+
+a.button {}
+a.button:hover {}
+a.button:active {}
