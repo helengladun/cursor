@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content">
+      <div class="fixed">Homework<br/> Helen Gladun</div>
+      <h1>Ознайомлення з css-правилом "position"</h1>
+      <p>Це правило встановлює спосіб позиціювання елементу відносно вікна браузера чи інших об'єктів на веб-сторінці.Положення элементу задається атрибутами left, top, right і bottom відносно краю вікна браузера.</p>
+      <p>Приклад блоку, в якому використовуються значення  absolute і relative властивості position:</p>
+      <div id="puzzle">
+        <img id="img1" src="puzzle/1.png" alt="">
+        <img id="img2" src="puzzle/2.png" alt="">
+        <img id="img3" src="puzzle/3.png" alt="">
+        <img id="img4" src="puzzle/4.png" alt="">
+        <img id="img5" src="puzzle/5.png" alt="">
+        <img id="img6" src="puzzle/6.png" alt="">
+        <img id="img7" src="puzzle/7.png" alt="">
+        <img id="img8" src="puzzle/8.png" alt="">
+        <img id="img9" src="puzzle/9.png" alt="">
+        <img id="img10" src="puzzle/10.png" alt="">
+        <img id="img11" src="puzzle/11.png" alt="">
+        <img id="img12" src="puzzle/12.png" alt="">
+        <img id="img13" src="puzzle/13.png" alt="">
+        <img id="img14" src="puzzle/14.png" alt="">
+        <img id="img15" src="puzzle/15.png" alt="">
+        <img id="img16" src="puzzle/16.png" alt="">
+        <img id="img17" src="puzzle/17.png" alt="">
+        <img id="img18" src="puzzle/18.png" alt="">
+        <img id="img19" src="puzzle/19.png" alt="">
+        <img id="img20" src="puzzle/20.png" alt="">
+      </div>
+      <h2>Значення властивості position</h2>
+      <p>Ця властивість може мати чотири значення: static, relative, absolute, fixed.</p>
+      <p><strong>absolute</strong> - Вказує, що елемент абсолютно зпозиціонований, при цьому елементи відображаються на веб-сторінці ніби абсолютно спозиціонованого елемента і немає. Положення елемента задається значеннями  left, top, right и bottom, також на положення впливає значення властивості position батьківського елементу. Так, якщо у батьківського елементу значення position встановлено як static чи батька немає, то відлік координат ведеться від краю вікна браузера. Якщо у батька значення position задано як fixed, relative чи absolute, то відлік координат ведеться від краю батьківського элементу.</p>
+      <p><strong>fixed</strong> - За своєю поведінкою це значення близке до absolute, але на відміну від нього привязується до вказаної властивостями left, top, right и bottom точки на екрані і не міняє свого положення при прокрутці веб-сторінки.</p>
+      <p><strong>relative</strong> - Положення элемента встановлюється відносно його початкового положення. Додавання властивостей left, top, right и bottom міняє позицію елементу і зміщує його в ту чи іншу сторону від початкового положення.</p>
+      <p><strong>static</strong> - Елементи відображаються як звично. Використання властивостей left, top, right и bottom не призводить до ніяких змін.</p>
+      <p><strong>inherit</strong> - Наслідує значение батьківського елементу.</p>
+    </div>
+  </body>
+</html>
