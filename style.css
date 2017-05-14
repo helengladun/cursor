@@ -2,7 +2,7 @@ body{
     background-color: #638a79;
     background-image: url("img/body-bg.png");
     background-repeat: repeat-x;
-    background-position: fixed;
+    background-attachment: fixed;
     color: #333;
     font: 13px/18px Arial;
 }
