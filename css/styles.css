@@ -1,5 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-bar .navbar-nav li a {
+  font-size: 16px;
+}
+.top-bar .navbar-nav li a:hover {
+  color: #6e9dd0;
+  font-size: 16px;
+}
+.header-banner {
+  height: 500px;
+  background: #abacac url("../img/grey-man.png") no-repeat right bottom;
+}
+.logos .logos-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.logos .logos-list > li:first-child {
+  line-height: 40px;
+  text-transform: uppercase;
 }
