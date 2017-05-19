@@ -15,28 +15,57 @@
   height: 400px;
   background: #abacac url("../img/grey-man.png") no-repeat right bottom;
   background-size: auto 380px;
+  margin-bottom: 15px;
 }
 .header-banner .jumbotron-text {
   text-align: center;
 }
-.header-banner h1 {
+.header-banner .jumbotron-text h1 {
   font-size: 50px;
   color: #fff;
   margin-bottom: 30px;
 }
-.header-banner p {
+.header-banner .jumbotron-text p {
   color: #fff;
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-.logos .logos-list {
+.header-banner .jumbotron-text .btn {
+  padding: 10px 36px;
+}
+section.logos .logos-list {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
-.logos .logos-list > li:first-child {
+section.logos .logos-list > li:first-child {
   line-height: 40px;
   text-transform: uppercase;
   font-weight: 800;
+}
+div.subscribe {
+  background: #17b8e7;
+  margin-top: 15px;
+  font-size: 15px;
+}
+div.subscribe .subscribe-container {
+  padding: 25px 0;
+  color: #fff;
+}
+div.subscribe .subscribe-container h3 {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  font-size: 24px;
+}
+div.subscribe .subscribe-buttons a {
+  display: inline-block;
+}
+div.subscribe .subscribe-buttons a:first-child {
+  margin-right: 10px;
+}
+div.subscribe .subscribe-buttons img {
+  max-width: 200px;
+  height: 78px;
 }
