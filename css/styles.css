@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,4 +68,36 @@ div.subscribe .subscribe-buttons a:first-child {
 div.subscribe .subscribe-buttons img {
   max-width: 200px;
   height: 78px;
+}
+section.guests {
+  padding: 30px 0 30px;
+}
+section.guests h2 {
+  text-align: center;
+  margin: 0;
+}
+section.guests h2 span {
+  color: #17b8e7;
+}
+.guests-container {
+  padding: 40px 20px;
+}
+.guests-container img {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+.guests-container .guest-text h2 {
+  color: #17b8e7;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.25;
+}
+.guests-container .guest-text p {
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 1.7;
 }
