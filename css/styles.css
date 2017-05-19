@@ -10,6 +10,9 @@ body {
 .text-white {
   color: #fff;
 }
+.colored-text {
+  color: #17b8e7;
+}
 .top-bar {
   background: #fff;
 }
@@ -46,6 +49,12 @@ body {
 }
 .header-banner .jumbotron-text .btn {
   padding: 10px 36px;
+}
+.page-wrapper .container {
+  width: 970px;
+}
+.page-wrapper .main-header .container {
+  width: 1170px;
 }
 section.logos .logos-list {
   list-style-type: none;
@@ -91,10 +100,6 @@ section.latest h2 {
   text-align: center;
   margin: 0;
 }
-section.guests h2 span,
-section.latest h2 span {
-  color: #17b8e7;
-}
 .guests-container {
   padding: 40px 20px;
 }
@@ -104,7 +109,7 @@ section.latest h2 span {
   height: auto;
   margin: auto;
 }
-.guests-container .guest-text h2 {
+.guests-container .guest-text h3 {
   color: #17b8e7;
   margin: 0;
   font-size: 20px;
@@ -129,7 +134,7 @@ section.latest .latest-article img {
 section.latest .latest-text {
   margin-top: 40px;
 }
-section.latest .latest-text h2 {
+section.latest .latest-text h3 {
   color: #17b8e7;
   margin: 0;
   font-size: 20px;
@@ -161,9 +166,62 @@ section.latest .btn-container .btn {
   width: 200px;
   font-size: 22px;
   color: #17b8e7;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 section.latest .btn-container .btn:hover {
   color: #fff;
   background: #17b8e7;
+}
+.popular-container {
+  padding: 40px 10px 30px 35px;
+}
+.popular-container h2 {
+  margin: 0;
+}
+.popular-container .popular-wrapper {
+  margin: 35px 0 15px;
+  display: inline-block;
+}
+.popular-container .popular-wrapper article {
+  margin: 0 0 25px 0;
+}
+.popular-container .popular-text {
+  padding: 0 20px;
+}
+.popular-container .popular-text p {
+  line-height: 1.7;
+  font-size: 14px;
+}
+.popular-container h3 {
+  margin: 0 0 5px 0;
+  font-size: 23px;
+}
+.popular-container .popular-img {
+  padding: 0;
+}
+.popular-container .popular-img img {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+.facebook-section {
+  padding: 40px 10px 30px 35px;
+}
+.facebook-section .fb-block {
+  margin-top: 35px;
+  background: #cbcbca;
+  height: 760px;
+}
+.facebook-section .fb-block ul {
+  list-style-type: none;
+  padding: 0;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facebook-section .fb-block ul li {
+  font-weight: 700;
+  text-transform: uppercase;
 }
