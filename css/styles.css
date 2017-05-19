@@ -1,8 +1,21 @@
 body {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+}
+.page-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+.text-white {
+  color: #fff;
+}
+.top-bar {
+  background: #fff;
+}
+.top-bar .navbar-default {
+  background: #fff;
+  border: none;
 }
 .top-bar .navbar-nav li a {
   font-size: 16px;
@@ -69,14 +82,17 @@ div.subscribe .subscribe-buttons img {
   max-width: 200px;
   height: 78px;
 }
-section.guests {
-  padding: 30px 0 30px;
+section.guests,
+section.latest {
+  padding: 35px 0 30px;
 }
-section.guests h2 {
+section.guests h2,
+section.latest h2 {
   text-align: center;
   margin: 0;
 }
-section.guests h2 span {
+section.guests h2 span,
+section.latest h2 span {
   color: #17b8e7;
 }
 .guests-container {
@@ -100,4 +116,54 @@ section.guests h2 span {
   margin-top: 5px;
   font-size: 13px;
   line-height: 1.7;
+}
+section.latest {
+  background: #191919;
+}
+section.latest .latest-article img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+section.latest .latest-text {
+  margin-top: 40px;
+}
+section.latest .latest-text h2 {
+  color: #17b8e7;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+section.latest .latest-text p {
+  margin: 5px 0 3px 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+section.latest .latest-text a {
+  font-size: 13px;
+  color: #17b8e7;
+}
+section.latest .latest-container,
+section.latest .guests-container {
+  padding: 40px 20px;
+}
+section.latest .latest-container > a {
+  display: inline-block;
+  color: #17b8e7;
+  margin: 20px 0 0 8px;
+}
+section.latest .btn-container .btn {
+  display: block;
+  padding: 5px 10px;
+  border: 3px solid #17b8e7;
+  width: 200px;
+  font-size: 22px;
+  color: #17b8e7;
+  margin: 0 auto;
+}
+section.latest .btn-container .btn:hover {
+  color: #fff;
+  background: #17b8e7;
 }
