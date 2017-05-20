@@ -3,51 +3,394 @@
   <head>
     <meta charset="utf-8">
     <title>Authority Website</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Header: Start -->
-    <header class="main-header">
-      <!-- Top Bar Block: Begin -->
-      <div class="top-bar">
-        <nav class="navbar navbar-default row">
-          <div class="navbar-header col-md-offset-1 col-md-2">
-            <div class="logo">
-              <a href="#" class="navbar-brand">
-                <img src="img/logo.png">
-              </a>
+    <div class="page-wrapper">
+      <!-- Header Block: Begin -->
+      <header class="main-header">
+        <div class="container">
+          <!-- Navigation Section: Begin -->
+          <div class="top-bar">
+            <nav class="navbar-default row">
+              <div class="navbar-header col-md-offset-1 col-md-2">
+                <div class="logo">
+                  <a href="#">
+                    <img src="img/logo.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">Tab 1</a></li>
+                  <li><a href="#">Tab 2</a></li>
+                  <li><a href="#">Tab 3</a></li>
+                  <li><a href="#">Tab 4</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- Navigation Section: End -->
+        </div>
+        <!-- Banner Section: Begin -->
+        <div class="jumbotron header-banner">
+          <div class="container">
+            <div class="row">
+              <div class="jumbotron-text col-md-8">
+                <h1>Main Headline Here</h1>
+                <p>Smaller header text here. Lorem ipsum dolor sit amet, consecter.
+                  Lorem ipsum dolor sit amet, consecter.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Call-to-Action Button Here</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 col-md-offset-5">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Tab1</a></li>
-              <li><a href="#">Tab2</a></li>
-              <li><a href="#">Tab3</a></li>
-              <li><a href="#">Tab4</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#"></a></li>
+        </div>
+        <!-- Banner Section: End -->
+      </header>
+      <!-- Header Block: End -->
+      <!-- Main Section: Begin -->
+      <main class="page-content">
+        <!-- Credibility Logos Section: Begin-->
+        <section class="logos">
+          <div class="container">
+            <ul class="logos-list">
+              <li>As seen on</li>
+              <li>
+                <a href="#">
+                  <img src="img/media1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/media2.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/media3.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/media4.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/media5.png" alt="">
+                </a>
+              </li>
             </ul>
           </div>
-        </nav>
-      </div>
-      <!-- Top Bar Block: End -->
-      <!-- Header Banner: Begin -->
-      <div class="jumbotron">
-        <div class="container">
-          <h4>Can you build the website of my dreams</h4>
-          <h2>Yup we can do that</h2>
-          <div class="btn btn-default">
-            Learn More
+        </section>
+        <!-- Credibility Logos Section: End-->
+        <!--Subscribe Buttons Section: Begin -->
+        <div class="subscribe">
+          <div class="container">
+            <div class="subscribe-container row">
+              <div class="col-md-6">
+                <h3>Main Headline</h3>
+                <div class="subscribe-buttons">
+                  <a href="#">
+                    <img src="img/itunes.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/stitcher.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p>Our top-rated show will teach you how...</p>
+                <ul class="subscribe-list">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Header Banner: End -->
-    </header>
-    <!-- Header: End -->
-
+        <!--Subscribe Buttons Section: End -->
+        <!-- Featured Guests Section: Begin -->
+        <section class="guests">
+          <div class="container">
+            <h2>Main <span class="colored-text">Headline</span></h2>
+            <div class="guests-container row">
+              <article class="guest col-md-6">
+                <div class="row">
+                  <div class="guest-img col-md-5">
+                    <img src="img/human.png" alt="">
+                  </div>
+                  <div class="guest-text col-md-7">
+                    <h3>Title of Talk or Article -
+                      Title of Talk or Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam</p>
+                  </div>
+                </div>
+              </article>
+              <article class="guest col-md-6">
+                <div class="row">
+                  <div class="guest-img col-md-5">
+                    <img src="img/human.png" alt="">
+                  </div>
+                  <div class="guest-text col-md-7">
+                    <h3>Title of Talk or Article -
+                      Title of Talk or Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="guests-container row">
+              <article class="guest col-md-6">
+                <div class="row">
+                  <div class="guest-img col-md-5">
+                    <img src="img/human.png" alt="">
+                  </div>
+                  <div class="guest-text col-md-7">
+                    <h3>Title of Talk or Article -
+                      Title of Talk or Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam</p>
+                  </div>
+                </div>
+              </article>
+              <article class="guest col-md-6">
+                <div class="row">
+                  <div class="guest-img col-md-5">
+                    <img src="img/human.png" alt="">
+                  </div>
+                  <div class="guest-text col-md-7">
+                    <h3>Title of Talk or Article -
+                      Title of Talk or Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- Featured Guests Section: End -->
+        <!-- Latest Episodes Section: Begin -->
+        <section class="latest text-white">
+          <div class="container">
+            <h2 >Main <span class="colored-text">Headline</span></h2>
+            <div class="latest-container row">
+              <article class="latest-article col-md-3">
+                <img src="img/human.jpg" alt="">
+                <div class="latest-text">
+                  <h3>Title of Talk or Article -
+                    Title of Talk or Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                  <a href="#">read more</a>
+                </div>
+              </article>
+              <article class="latest-article col-md-3">
+                <img src="img/human.jpg" alt="">
+                <div class="latest-text">
+                  <h3>Title of Talk or Article -
+                    Title of Talk or Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                  <a href="#">read more</a>
+                </div>
+              </article>
+              <article class="latest-article col-md-3">
+                <img src="img/human.jpg" alt="">
+                <div class="latest-text">
+                  <h3>Title of Talk or Article -
+                    Title of Talk or Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                  <a href="#">read more</a>
+                </div>
+              </article>
+              <article class="latest-article col-md-3">
+                <img src="img/human.jpg" alt="">
+                <div class="latest-text">
+                  <h3>Title of Talk or Article -
+                    Title of Talk or Article</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.</p>
+                  <a href="#">read more</a>
+                </div>
+              </article>
+              <a href="#"> &#8810; Older Entries</a>
+            </div>
+            <div class="btn-container row">
+              <a class="btn" href="#">More Episods</a>
+            </div>
+            <div class="row">
+              <div class="button"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Latest Episodes Section: End -->
+        <!--Popular Episodes and Facebook Sections: Begin -->
+        <div class="popular-block">
+          <div class="container">
+            <div class="row">
+              <!--Popular Episodes Section: Begin -->
+              <section class="popular-container col-md-9">
+                <h2>Main <span class="colored-text">Headline</span></h2>
+                <div class="popular-wrapper">
+                  <article class="popular-article row">
+                    <div class="popular-img col-md-3">
+                      <img src="img/human.png" alt="">
+                    </div>
+                    <div class="popular-text col-md-9">
+                      <h3>Title of Talk or Article -
+                        Title of Talk or Article</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </article>
+                  <article class="popular-article row">
+                    <div class="popular-img col-md-3">
+                      <img src="img/human.png" alt="">
+                    </div>
+                    <div class="popular-text col-md-9">
+                      <h3>Title of Talk or Article -
+                        Title of Talk or Article</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </article>
+                  <article class="popular-article row">
+                    <div class="popular-img col-md-3">
+                      <img src="img/human.png" alt="">
+                    </div>
+                    <div class="popular-text col-md-9">
+                      <h3>Title of Talk or Article -
+                        Title of Talk or Article</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </article>
+                  <article class="popular-article row">
+                    <div class="popular-img col-md-3">
+                      <img src="img/human.png" alt="">
+                    </div>
+                    <div class="popular-text col-md-9">
+                      <h3>Title of Talk or Article -
+                        Title of Talk or Article</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <!--Popular Episodes Section: End -->
+              <!--Facebook Section: Begin -->
+              <div class="facebook-section col-md-3">
+                <h4>Find us on <span class="colored-text">Facebook</span></h4>
+                <div class="fb-block">
+                  <ul class="fb-links">
+                    <li>Facebook</li>
+                    <li>Widget</li>
+                    <li>Showing</li>
+                    <li>Latest</li>
+                    <li>Posts</li>
+                  </ul>
+                </div>
+              </div>
+              <!--Facebook Section: End -->
+            </div>
+          </div>
+        </div>
+        <!--Popular Episodes and Facebook Sections: Begin -->
+        <!--How To Consume Section: Begin -->
+        <section class="to-consume">
+          <div class="container">
+            <h2>Main <span class="colored-text">Headline</span></h2>
+            <div class="images-block row">
+              <div class="col-md-4">
+                <div class="img-circle"><span class="text">Image or Icon</span></div>
+              </div>
+              <div class="col-md-4">
+                <div class="img-circle"><span class="text">Image or Icon</span></div>
+              </div>
+              <div class="col-md-4">
+                <div class="img-circle"><span class="text">Image or Icon</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--How To Consume Section: End -->
+      </main>
+      <!-- Main Section: End -->
+      <!-- Footer: Begin -->
+      <footer class="main-footer">
+        <div class="top-footer">
+          <div class="container">
+            <div class="row text-white">
+              <div class="footer-text col-md-6">
+                <h2>Main <span class="colored-text">Headline</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="footer-buttons col-md-6">
+                <h2>Main Large Call-To-Action Headline</h2>
+                <a href="#" class="btn">Call-to-Action Button Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Legalese Block: Begin -->
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="bottom-footer-text text-white">
+              <span>Copyright &copy; &bull; Company Information</span>
+            </div>
+          </div>
+        </div>
+        <!-- Legalese Block: End -->
+      </footer>
+      <!-- Footer: End -->
+    </div>
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
