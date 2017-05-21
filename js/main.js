@@ -7,20 +7,20 @@ function customConverterToUah() {
         output = '';
 
     // currency convertation
-    var EurToUah = mainConverter(euros, eurRate);
-    var UsdToUah = mainConverter(dollars, usdRate);
-    var OneEurToUsd = Number(eurRate/usdRate).toFixed(3);
+    var eurToUah = mainConverter(euros, eurRate);
+    var usdToUah = mainConverter(dollars, usdRate);
+    var oneEurToUsd = Number(eurRate/usdRate).toFixed(3);
 
-     if (euros && EurToUah) {
-        output = euros + ' euros are equal ' + EurToUah + ' grns, ';
+     if (euros && eurToUah) {
+        output = euros + ' euros are equal ' + eurToUah + ' grns, ';
      }
 
-     if (dollars && UsdToUah) {
-         output = output.concat(dollars + ' dollars are equal ' + UsdToUah + ' grns, ');
+     if (dollars && usdToUah) {
+         output = output.concat(dollars + ' dollars are equal ' + usdToUah + ' grns, ');
      }
 
-     if (OneEurToUsd) {
-         output = output.concat(' one euro is equal ' +  OneEurToUsd + ' dollars.');
+     if (oneEurToUsd) {
+         output = output.concat(' one euro is equal ' +  oneEurToUsd + ' dollars.');
      }
 
     //result
@@ -37,5 +37,3 @@ function mainConverter(currencyNumber, currencyRate) {
 }
 
 document.querySelector('.push-to-convert').addEventListener( "click" , customConverterToUah);
-
-
