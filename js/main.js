@@ -20,7 +20,7 @@ function customConverterToUah() {
      }
 
      if (OneEurToUsd) {
-         output = output.concat(' one euro is equal ' +  OneEurToUsd + 'dollars.');
+         output = output.concat(' one euro is equal ' +  OneEurToUsd + ' dollars.');
      }
 
     //result
