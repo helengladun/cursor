@@ -15,7 +15,7 @@ if (name && myEvent && place && time) {
     document.getElementsByClassName('main-text')[0].innerHTML = 'Great, thank you!';
 }
 else {
-    document.getElementsByClassName('main-text')[0].innerHTML = 'Please, fill in all of fields.';
+    document.getElementsByClassName('main-text')[0].innerHTML = 'Please, refresh the page and fill in all of fields.';
 }
 
 
