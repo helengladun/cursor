@@ -12,10 +12,10 @@ if (name && myEvent && place && time) {
     //result in console
     console.log(output);
 
-    document.getElementsByClassName('main-text')[0].innerHTML = 'Great, thank you!';
+    document.querySelector('.main-text').innerHTML = 'Great, thank you!';
 }
 else {
-    document.getElementsByClassName('main-text')[0].innerHTML = 'Please, refresh the page and fill in all of the fields.';
+    document.querySelector('.main-text').innerHTML = 'Please, refresh the page and fill in all of the fields.';
 }
 
 
