@@ -1,8 +1,8 @@
 // total sum
 function sum(start, end) {
   var sum;
-  start = parseInt(start);
-  end = parseInt(end);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
 
   if ( (start || start === 0) && end && end >= start ) {
     sum = 0;
@@ -16,8 +16,8 @@ function sum(start, end) {
 
 // Display even numbers by using for loop with continue
 function displayEvenNumbersWithContinue(start, end) {
-  start = parseInt(start);
-  end = parseInt(end);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
   var resultArr;
 
   if ( (start || start === 0) && end && end >= start ) {
@@ -34,8 +34,8 @@ function displayEvenNumbersWithContinue(start, end) {
 
 // Display even numbers by using for loop without continue
 function displayEvenNumbersWithoutContinue(start, end) {
-  start = parseInt(start);
-  end = parseInt(end);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
   var resultArr;
 
   if ( (start || start === 0) && end && end >= start ) {
@@ -51,8 +51,8 @@ function displayEvenNumbersWithoutContinue(start, end) {
 
 //Display odd numbers by using ‘while’ loop
 function displayOddNumbers(start, end) {
-  start = parseInt(start);
-  end = parseInt(end);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
   var i = start,
       resultArr;
 
@@ -72,9 +72,9 @@ function displayOddNumbers(start, end) {
   once num of iteration is equal the num of month
   of your birthday then stop execution of loop*/
 function displayNumbersUntil(start, end, until) {
-  start = parseInt(start);
-  end = parseInt(end);
-  until = parseInt(until);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
+  until = parseInt(until, 10);
   var resultArr;
 
   if ( (start || start === 0) && end && until
@@ -94,8 +94,8 @@ function displayNumbersUntil(start, end, until) {
 
 //Rewrite code from using ‘for’ to using ‘while’
 function usingWhile(start, end) {
-  start = parseInt(start);
-  end = parseInt(end);
+  start = parseInt(start, 10);
+  end = parseInt(end, 10);
   var i = start,
       resultArr;
 
@@ -114,7 +114,7 @@ function promptRepeatWithWhile() {
   var userNumber = 0;
 
   while (!userNumber || userNumber <= 100) {
-      userNumber = parseInt(prompt('Please put the number greater than 100', '101'));
+      userNumber = parseInt(prompt('Please put the number greater than 100', '101'), 10);
   }
   return userNumber;
 }
@@ -124,14 +124,14 @@ function promptRepeatWithDoWhile() {
   var userNumber = 0;
 
   do {
-    userNumber = parseInt(prompt('Please put number greater than 100', '101'));
+    userNumber = parseInt(prompt('Please put number greater than 100', '101'), 10);
   } while (!userNumber || userNumber <= 100);
   return userNumber;
 }
 
 function displayHash(number) {
   var hashArr;
-  number = parseInt(number);
+  number = parseInt(number, 10);
 
   if ( number && number > 0 ) {
     hashArr = [];
