@@ -55,7 +55,8 @@ function onSubmitEvent() {
 
     if (invalidArr && invalidArr.length)
     {
-      alert('Your data is invalid');
+      alert('Your data is invalid\n Age have to contains only numbers \n Username have to starts from "user_"\n Date have to be in a format dd/mm/yyyy');
+
     } else {
       alert('Your data is valid');
     }
