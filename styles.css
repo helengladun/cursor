@@ -15,6 +15,4 @@ div.bullet {
   height: 2px;
   position: absolute;
   background: black;
-
-  animation: shoot 2.75s linear 1 none;
 }
