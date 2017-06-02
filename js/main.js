@@ -55,7 +55,19 @@ function onSubmitEvent() {
 
     if (invalidArr && invalidArr.length)
     {
-      alert('Your data is invalid\n' +
+      var invalidValue = [];
+      for (var j = 0; j < invalidArr.length; j++) {
+        if (invalidArr[j].inputName === 'age') {
+          invalidValue.push('age');
+        }
+        if (invalidArr[j].inputName === 'username') {
+          invalidValue.push('username');
+        }
+        if (invalidArr[j].inputName === 'date') {
+          invalidValue.push('date');
+        }
+      }
+      alert('Your data (' + invalidValue + ') is invalid\n' +
           'Input \'Age\' has to contain only numbers\n' +
           'Input \'Username\' has to start from "user_"\n' +
           'Input \'Date\' has to be in a format dd/mm/yyyy');
