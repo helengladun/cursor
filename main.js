@@ -20,6 +20,8 @@ displayText(currentLang);
 function displayText(lang) {
   var langEls = document.getElementsByClassName('lang-' + lang);
 
+  makeLangInputChecked(lang);
+
   for (var i=0; i<langEls.length; i++) {
     var langEl = langEls[i];
 
@@ -57,3 +59,15 @@ $save.addEventListener('click', function(){
     displayText(language);
   }
 });
+
+function makeLangInputChecked(lang) {
+  var langInputs = document.querySelectorAll('#languages input[name="lang"]');
+
+  for (var i = 0; i < langInputs.length; i++) {
+      langInputs[i].removeAttribute('checked');
+    if (langInputs[i].parentNode.innerText.trim().toLowerCase() === lang) {
+      langInputs[i].setAttribute('checked', 'checked');
+      console.log(langInputs[i]);
+    }
+  }
+}
