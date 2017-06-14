@@ -93,8 +93,8 @@ function renderTable(data) {
     var h2 =  `${tempC}&deg;C ${summaryDay}`;
 
     if (icon) {
+      $('figure.icons').append(`<canvas id="${icon}" width="64" height="64"></canvas>`);
       createIcon(icon);
-      $('figure#icons').append(`<canvas id="${icon}" class="hidden" width="64" height="64"></canvas>`)
     }
 
     if ($('.forecast-data').hasClass('hidden')) {
@@ -122,7 +122,7 @@ function renderLocation() {
         dataType : 'json',
         url: geolocation,
         success: function(location){
-          console.log(location);
+          
           $('div.preloader').hide();
           $('div.preloader').removeClass('preloader');
 
