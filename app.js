@@ -122,7 +122,7 @@ function renderLocation() {
         dataType : 'json',
         url: geolocation,
         success: function(location){
-          
+
           $('div.preloader').hide();
           $('div.preloader').removeClass('preloader');
 
