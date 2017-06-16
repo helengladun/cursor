@@ -63,12 +63,13 @@ $('#nextbtn').click(function(){
   $('#prevbtn').prop('disabled', false);
   $('#prevbtn').removeClass('disabled');
   $('#prevbtn').addClass('active');
-  getDataFromDarkSky(key, myLatitude, myLongitude, nextTime);
+  getDataFromDarkSky(key, myLatitude, myLongitude, today);
 });
 
 function clearFields() {
   $('#currently').text('');
-  $('figure#icons').text('');
+  $('#cur-date').text('');
+  $('figure.icons').text('');
   $('.forecast-data .temp').text('');
   $('.forecast-data .wind').text('');
   $('.forecast-data .visibility').text('');
@@ -79,6 +80,8 @@ function renderTable(data) {
   if (data) {
     clearFields();
     var location = data['timezone'];
+    var time = new Date(data['currently']['time']*1000);
+    var curDay = `Date: ${time.getDate()}.${time.getMonth()+1}.${time.getFullYear()}`;
     var tempF = data['currently']['temperature'];
     var tempC = Math.round((tempF-32) * 5 / 9);
     var windSpeed = Math.round(data['currently']['windSpeed']);
@@ -90,7 +93,8 @@ function renderTable(data) {
     var tdWind = windSpeed ? '<td>Wind speed (m/s)</td><td>' + windSpeed + '</td>' : '';
     var tdVisibility = visibility ? '<td>Visibility (km)</td><td>' + visibility + '</td>' : '';
     var tdHumidity = humidity ? '<td>Humidity (%)</td><td>' + humidity + '</td>' : '';
-    var h2 =  `${tempC}&deg;C ${summaryDay}`;
+    var h2Date =  `${curDay}`;
+    var h2Summary =  `${tempC}&deg;C ${summaryDay}`;
 
     if (icon) {
       $('figure.icons').append(`<canvas id="${icon}" width="64" height="64"></canvas>`);
@@ -101,7 +105,8 @@ function renderTable(data) {
       $('.forecast-data').removeClass('hidden');
       $('.forecast-data').addClass('visible');
     }
-    $('#currently').append(h2);
+    $('#cur-date').append(h2Date);
+    $('#currently').append(h2Summary);
     $('.forecast-data .temp').append(tdTemp);
     $('.forecast-data .wind').append(tdWind);
     $('.forecast-data .visibility').append(tdVisibility);
