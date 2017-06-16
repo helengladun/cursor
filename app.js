@@ -142,31 +142,39 @@ ajax.head = function(url, headers) {
   });
 };
 
-ajax.put = function(url, headers) {
+ajax.put = function(url, data, headers) {
   var _headers = headers;
-  return new Promise(function(resolve, reject) {
+  var _data = data;
+  var params = '';
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('PUT', url, true);
+  if (Object.keys(_data).length > 0) {
 
-    setHeaders(xhr, _headers);
+    params = parseParamsData(_data);
 
-    xhr.onload = function() {
-      if (this.status == 200) {
-        resolve(this.responseText);
-      } else {
-        var error = new Error(this.statusText);
-        error.code = this.status;
-        reject(error);
-      }
-    };
+    return new Promise(function(resolve, reject) {
 
-    xhr.onerror = function() {
-      reject(new Error("Network Error"));
-    };
+      var xhr = new XMLHttpRequest();
+      xhr.open('PUT', url, true);
 
-    xhr.send();
-  });
+      setHeaders(xhr, _headers);
+
+      xhr.onload = function() {
+        if (this.status == 200) {
+          resolve(this.responseText);
+        } else {
+          var error = new Error(this.statusText);
+          error.code = this.status;
+          reject(error);
+        }
+      };
+
+      xhr.onerror = function() {
+        reject(new Error("Network Error"));
+      };
+
+      xhr.send(params);
+    });
+  }
 };
 
 function parseParamsData(params) {
