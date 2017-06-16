@@ -65,7 +65,6 @@ var getInfo = function(url, method) {
         // jsonpRequest(url, cb);
       });
     } catch (error) {
-      console.log(error.code);
       alert(error);
     }
   }

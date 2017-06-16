@@ -25,7 +25,7 @@ var ajax = function(params) {
           return ajax.post(url, data, headers);
           break;
         case 'PUT':
-          return ajax.put(url, headers);
+          return ajax.put(url, data, headers);
           break;
         case 'HEAD':
           return ajax.head(url, headers);
