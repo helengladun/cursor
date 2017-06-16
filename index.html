@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>play with ajax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container">
+    <!-- Form: Begin -->
+    <div class="row">
+      <form class="form-inline get-images-form centered">
+        <div class="form-group">
+          <label for="imgCatName">Enter category</label>
+          <input type="text" class="form-control" id="imgCatName" name='category' placeholder="cats">
+        </div>
+        <div class="form-group">
+          <label for="imgLimit">Enter limit</label>
+          <input type="text" class="form-control" id="imgLimit" name="limit" placeholder="100">
+        </div>
+        <button id="getimg" class="btn btn-info">Get images</button>
+      </form>
+    </div>
+    <!-- Form Block: End -->
+    <!-- Images: Begin -->
+    <div class="row">
+      <div class="failed-info"></div>
+      <div id="images">
+      </div>
+    </div>
+    <!-- Images: End -->
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>

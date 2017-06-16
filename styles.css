@@ -1,0 +1,35 @@
+body {
+  background-image: url(img/blue.jpg);
+}
+#images {
+  text-align: center;
+
+}
+
+#images img {
+  max-height: 200px;
+  margin: 3px;
+  border: 1px solid white;
+  width: auto;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+}
+
+.get-images-form.centered {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+.get-images-form {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+}
