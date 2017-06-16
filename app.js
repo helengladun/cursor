@@ -29,7 +29,8 @@ var appendImage = function (url) {
 
   imgEl.onerror = function () {
     // when image loading failed
-    imgEl.src = 'img/not-avail.jpg';
+    // imgEl.src = 'img/not-avail.jpg';
+    imgEl.classList.add('hidden');
     // alert(1);
   };
 
