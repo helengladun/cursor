@@ -19,48 +19,34 @@ var get = function (url, callback) {
 
 var appendImage = function (url) {
   var imgEl = document.createElement('img');
-  // <img />
 
   imgEl.src = url;
-  // <img src="{url}" />
 
   imgEl.classList.add('image');
   imgEl.classList.add('img-rounded');
 
   imgEl.onerror = function () {
-    // when image loading failed
     // imgEl.src = 'img/not-avail.jpg';
     imgEl.classList.add('hidden');
-    // alert(1);
   };
 
   document.getElementById('images').appendChild(imgEl);
 };
 
-// getImages({limit: 5})
-// getImages({})
-// getImages() -- by default should take 100 images
-
-// getImages({limit: 5, category: "cats"})
-// getImages({category: "cats"})
-// getImages()
-
-// "S"OLID, S -> Single Responsibility
 var getImages = function(params) {
 
   var limit;
-  var cat;
+  var category;
 
   if (params.limit && params.category) {
     limit = params.limit;
-    cat = params.category;
+    category = params.category;
   } else {
     limit = 100;
-    cat = 'cats';
+    category = 'cats';
   }
 
-  // var url = 'https://www.reddit.com/r/pics.json';
-  var url = 'https://www.reddit.com/r/pics/search.json?q=' + cat;
+  var url = 'https://www.reddit.com/r/pics/search.json?q=' + category;
   url += '&limit=' + limit;
 
   get(url, function (status, headers, body) {
@@ -71,7 +57,6 @@ var getImages = function(params) {
 
       appendImage(url);
 
-      // console.log('ITEM!', child.data.url);
     });
 
   });
