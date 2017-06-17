@@ -143,7 +143,7 @@ function isValid(el) {
   if (inputName) {
     switch (inputName) {
       case "url":
-        regex = '^[a-z0-9-.\/]*$';
+        regex = '^[a-zA-Z0-9-.\/]*$';
         break;
     }
   }
