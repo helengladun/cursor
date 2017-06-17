@@ -7,10 +7,8 @@ var myLatitude,
 
 Date.prototype.getUnixTime = function() { return this.getTime()/1000 | 0 };
 
-setTimeout(function() {
-  renderLocation();
-  getDataFromDarkSky(key, myLatitude, myLongitude, today);
-}, 3000);
+renderLocation();
+getDataFromDarkSky(key, myLatitude, myLongitude, today);
 
 $('#nextbtn').prop('disabled', true);
 
