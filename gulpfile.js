@@ -79,22 +79,16 @@ gulp.task('livereload', function() {
   });
 });
 
-gulp.task('style:build', ['less']);
-
-gulp.task('html:build', ['copy']);
-
-gulp.task('js:build', ['hint', 'concat', 'js-babel', 'uglify']);
-
-gulp.task('server', ['livereload', 'html:build', 'style:build', 'js:build'], function() {
+gulp.task('server', ['livereload'], function() {
 
   gulp.watch(path.src.html, ['copy']).on('change', reload);
 
-  gulp.watch(path.src.style, ['style:build']);
+  gulp.watch(path.src.style, ['less']);
 
-  gulp.watch([path.src.js], ['js:build']);
+  gulp.watch([path.src.js], ['uglify']);
 
 });
 
-gulp.task('prod', ['del', 'html:build', 'style:build', 'js:build']);
+gulp.task('prod', ['del', 'copy', 'less', 'uglify']);
 
 gulp.task('default', ['prod', 'server']);
