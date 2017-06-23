@@ -142,6 +142,16 @@ function User() {
 
               break;
 
+            case 'birth' :
+
+              valid = new Date(inputValue) < new Date(Date.now());
+
+              if (!valid) {
+                errorMessage = `Date should't be in future`;
+              }
+
+              break;
+
             case 'email' :
               var regexpEmail = new RegExp('^[-a-z0-9!#$%&\'*+\/=?^_`{|}~]+(\.[-a-z0-9!#$%&\'*+\/=?^_`{|}~]+)*@([a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$');
               valid = regexpEmail.test(inputValue);
@@ -171,5 +181,3 @@ function User() {
 }
 
 User.prototype = new SuperUser();
-
-
