@@ -71,8 +71,8 @@ function View() {
   this.onBuyButtonClick = function() {
 
     var checkedItems = document.querySelectorAll('.items-table input:checked');
-    var validFieldsArr = [].slice.call(document
-      .querySelectorAll('.items-table tr td[data-name="quantity"] input'))
+    var validFieldsArr = [].slice
+      .call(document.querySelectorAll('.items-table tr td[data-name="quantity"] input'))
       .map(function(item) {return that.returnCorrectNumberFormInput(item);})
       .filter(function(item) {return !!item; });
 
@@ -90,7 +90,12 @@ function View() {
           var tableTr = input.parentNode.parentNode;
           var name = tableTr.querySelector('td[data-name="name"]').innerText;
           var itemObj = that.getItemObjectByName(name);
+
           var weight = that.returnCorrectNumberFormInput(tableTr.querySelector('td[data-name="quantity"] input[name="quantity"]'));
+
+          if (itemObj.getUnits() === 'piece') {
+            weight = parseInt(weight, 10);
+          }
 
           itemObj.setWeight(weight);
 
@@ -114,15 +119,15 @@ function View() {
         trFoot.appendChild(tdSummary);
         $billTableFooter.appendChild(trFoot);
 
-        if (document.querySelector('.items-bill').classList.contains('hidden'))
+        if ($billTable.classList.contains('hidden'))
         {
-          document.querySelector('.items-bill').classList.remove('hidden');
+          $billTable.classList.remove('hidden');
           document.querySelector('.thanks').classList.remove('hidden');
         }
 
       } else if (checkedItems.length > validFieldsArr.length) {
         alert('Your input type is wrong, please write a number');
-        document.querySelector('.items-bill').classList.add('hidden');
+        $billTable.classList.add('hidden');
         document.querySelector('.thanks').classList.add('hidden');
       }
     } else {
@@ -174,6 +179,7 @@ function View() {
         total += objArray[i].getPrice() * objArray[i].getWeight();
       }
     }
+
     return total;
   };
 
@@ -187,5 +193,3 @@ function View() {
 var view = new View();
 view.appendItemsTable();
 view.bindEvents();
-
-
