@@ -204,7 +204,7 @@ document.querySelector('#show-arr-machines').addEventListener('click', function(
 
     showMachinesInConsole(casino);
   } else {
-    alert('');
+    alert('There are no available machines');
   }
 
 });
