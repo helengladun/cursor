@@ -33,7 +33,7 @@ body {
   background-attachment: fixed;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/Las_Vegas_slot_machines.jpg);
+    url(../img/Las_Vegas_slot_machines.jpg);
   background-size: 100%;
   width: 100%;
   height:100vh;
@@ -92,7 +92,7 @@ body {
   font: 13px/18px Arial;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/Casino_in_Las_Vegas.jpg);
+    url(../img/Casino_in_Las_Vegas.jpg);
   background-size: 100%;
   width: 100%;
   height:100vh;
