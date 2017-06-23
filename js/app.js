@@ -6,8 +6,6 @@ var $shownBlock = document.querySelector('.shown-array');
 
 var changeBalanceAndQuant = function() {
   if (casino) {
-    console.log(casino.getTotalMoney());
-    console.log(casino.getQuantitySlotMachines());
     $currBalance.innerText = casino.getTotalMoney();
     $currQuantity.innerText  = casino.getQuantitySlotMachines();
   }
@@ -210,4 +208,3 @@ document.querySelector('#show-arr-machines').addEventListener('click', function(
   }
 
 });
-
