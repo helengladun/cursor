@@ -1,0 +1,8 @@
+form[name="added-form"] {
+  padding-top: 20px;
+  display: none;
+}
+
+form[name="set-limit"] {
+  padding: 20px 0;
+}
