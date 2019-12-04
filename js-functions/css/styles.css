@@ -1,0 +1,49 @@
+h2 {
+    text-align: center;
+}
+.tabs-container {
+    padding: 20px;
+    border: 1px solid #a4a4a4;
+    border-radius: 6px;
+}
+
+.task-container {
+    padding: 0 20px 20px 20px;
+}
+
+.tasks-content {
+    padding: 10px;
+}
+
+.tab-pane .description {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.buttons-block > div {
+    width: 48%;
+}
+
+.buttons-block > div input {
+    width: 100%;
+}
+
+.form-horizontal .buttons-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.task-input {
+    padding-bottom: 20px;
+}
+
+pre.inline {
+    white-space:normal;
+}
+
+pre.column {
+    text-align:left;
+    padding-left: 40%;
+    font-style: normal;
+}

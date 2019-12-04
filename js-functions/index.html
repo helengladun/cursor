@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Essetials (Lecture 2)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>JS Essentials (Lecture 2)</h2>
+      <p>Choose one of the tab to see how the function is working</p>
+      <div class="tabs-container">
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#task1">Task 1/Task 2</a></li>
+          <li><a data-toggle="pill" href="#task31">Task 3.1</a></li>
+          <li><a data-toggle="pill" href="#task32">Task 3.2</a></li>
+          <li><a data-toggle="pill" href="#task4">Task 4</a></li>
+          <li><a data-toggle="pill" href="#task5">Task 5</a></li>
+          <li><a data-toggle="pill" href="#task6">Task 6</a></li>
+          <li><a data-toggle="pill" href="#task71">Task 7.1</a></li>
+          <li><a data-toggle="pill" href="#task72">Task 7.2</a></li>
+          <li><a data-toggle="pill" href="#task8">Task 8</a></li>
+        </ul>
+        <div class="tasks-content tab-content">
+          <!-- First and second tasks: Begin -->
+          <div id="task1" class="tab-pane fade in active ">
+            <div class="description">
+              <p>Task 1: Find and display total sum of numbers from 1 to 3</p>
+              <p>Task 2: Find and display total sum of numbers from 20 to 220</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num11" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num11" placeholder="1" required="required">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num12" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num12" placeholder="3" required="required">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result1" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result1" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- First and second tasks: End -->
+          <!-- Third task (Part 1): Begin -->
+          <div id="task31" class="tab-pane fade">
+            <div class="description">
+              <p>Task 3.1: Display even numbers from 1 to 20 by using for loop.
+                Do it with using ‘continue’</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num311" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num311" placeholder="1">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num312" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num312" placeholder="20">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result31" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result31" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Third task (Part 1): End -->
+          <!-- Third task (Part 2): Begin -->
+          <div id="task32" class="tab-pane fade">
+            <div class="description">
+              <p>Task 3.2: Display even numbers from 1 to 20 by using for loop.
+                Do it without using ‘continue’</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num321" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num321" placeholder="1">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num322" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num322" placeholder="20">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result32" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result32" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Third task (Part 2): End -->
+          <!-- Fourth task: Begin -->
+          <div id="task4" class="tab-pane fade">
+            <div class="description">
+              <p>Task 4: Display odd numbers from 10 to 30 by using ‘while’ loop</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num41" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num41" placeholder="10">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num42" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num42" placeholder="30">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result4" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result4" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth task : End -->
+          <!-- Fifth task: Begin -->
+          <div id="task5" class="tab-pane fade">
+            <div class="description">
+              <p>Task 5: Display numbers from 1 to 15 using ‘for’ loop,
+                once num of iteration is equal the num of month
+                of your birthday then stop execution of loop</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num51" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num51" placeholder="1">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num52" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num52" placeholder="15">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num53" class="control-label">Enter number of your birth month:</label>
+                    <div>
+                      <input type="text" pattern="^[1-12]+$" class="form-control" id="num53" placeholder="9">
+                      <span class="help-block">Only number from 1 to 12 allowed</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result5" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result5" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Fifth task : End -->
+          <!-- Sixth task: Begin -->
+          <div id="task6" class="tab-pane fade">
+            <div class="description">
+              <p>Task 6: Rewrite code from using ‘for’ to using ‘while’</p>
+              <pre class="inline"> for(var i = 0; i &lt; 5; i++) {
+               console.log(`number ${i}`)
+              } </pre>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num61" class="control-label">Enter first number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num61" placeholder="0">
+                      <span class="help-block">Only numbers allowed (This number should be less than number below)</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="num62" class="control-label">Enter second number:</label>
+                    <div>
+                      <input type="text" pattern="^-?[ 0-9]+$" class="form-control" id="num62" placeholder="5">
+                      <span class="help-block">Only numbers allowed (This number should be greater than number above)</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result6" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result6" class="form-control" rows="6" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth task : End -->
+          <!-- Seventh task (Part 1): Begin -->
+          <div id="task71" class="tab-pane fade">
+            <div class="description">
+              <p>Task 7.1: Write code which will ask user (prompt )
+                to put number greater than 100, repeat prompt
+                until user put required number, then display result
+                of prompt. Do it using ‘while’</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-12 task-input">
+                <form class="form-horizontal">
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-primary btn-lg btn-block" type="button" value="Enable prompt">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-12 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result71" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result71" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Seventh task (Part 1): End -->
+          <!-- Seventh task (Part 2): Begin -->
+          <div id="task72" class="tab-pane fade">
+            <div class="description">
+              <p>Task 7.2: Write code which will ask user (prompt )
+                to put number greater than 100, repeat prompt
+                until user put required number, then display result
+                of prompt. Do it using ‘do while’</p>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-12 task-input">
+                <form class="form-horizontal">
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-primary btn-lg btn-block" type="button" value="Enable prompt">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-12 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result72" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result72" class="form-control" rows="3" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Seventh task (Part 2): End -->
+          <!-- Eighth task: Begin -->
+          <div id="task8" class="tab-pane fade">
+            <div class="description">
+              <p>Task 8: Show in console using for.</p>
+              <pre class="column">
+#
+##
+###
+####
+#####
+######
+#######
+########</pre>
+            </div>
+            <div class="task-container row">
+              <div class="col-lg-6 task-input">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="num81" class="control-label">How many hashes do you want to be shown?</label>
+                    <div>
+                      <input type="text" pattern="^[0-9]+$" class="form-control" id="num81" placeholder="8">
+                      <span class="help-block">Only positive numbers allowed</span>
+                    </div>
+                  </div>
+                  <div class="buttons-block">
+                    <div>
+                      <input class="btn btn-success btn-block" type="button" value="Calculate">
+                    </div>
+                    <div>
+                      <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-offset-1 col-lg-5 task-result">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="result8" class="control-label">Result:</label>
+                    <div>
+                      <textarea id="result8" class="form-control" rows="6" ></textarea>
+                      <span class="help-block"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Eighth task : End -->
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/listeners.js"></script>
+  </body>
+</html>
