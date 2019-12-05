@@ -1,0 +1,3 @@
+form[name="login"] input[type="submit"] {
+  display: block;
+}
