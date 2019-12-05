@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  color: #777;
+  background-color: white;
+  padding: 50px 80px;
+  height: auto;
+  text-align: center;
+}
+.content-1 {
+  top: 100px;
+}
+
+.content-2 {
+  top: 600px;
+}
+
+#parallax {
+  position: relative;
+  opacity: 0.65;
+  background: url(img/parallax-back.jpeg) no-repeat;
+  background-position: 50% 0%;
+  height: 1000px;
+  width: 100%;
+  max-width: 1365px;
+  z-index: 1;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
