@@ -1,0 +1,18 @@
+div#player {
+  width: 10px;
+  height: 10px;
+  background: red;
+
+  transition: all 0.3s ease-out 0s;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+div.bullet {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  background: black;
+}
