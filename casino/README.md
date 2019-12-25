@@ -1,2 +1,2 @@
 # Task "Casino" | [cursor.education]
-Please go to the following [link](https://helengladun.github.io/casino/)
+Please go to the following [link](https://helengladun.github.io/cursor/casino/)
