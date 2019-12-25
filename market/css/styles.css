@@ -1,0 +1,44 @@
+
+/*.items-table {*/
+  /*border: 1px solid black;*/
+  /*border-collapse: collapse;*/
+  /*margin: 20px;*/
+/*}*/
+
+/*.items-table th, .items-table td,*/
+/*.items-bill th, .items-bill td {*/
+  /*border: 1px solid black;*/
+  /*padding: 5px;*/
+/*}*/
+
+.items-table.table td, .items-bill.table td {
+  vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
+.thanks {
+  margin: 10px;
+}
+
+.items-table-block {
+  height: 300px;
+  overflow: scroll;
+  border: 1px dashed #ddd;
+}
+
+.main-container {
+  padding-top: 20px;
+}
+
+#buy {
+  margin: 10px auto;
+  padding: 10px 40px;
+}
+
+.items-bill .summary {
+  font-weight: 700;
+  font-size: 20px;
+}
