@@ -1,0 +1,20 @@
+body {
+  background-image: url(../images/background.jpg);
+  margin: 0 auto;
+  color: white;
+  background-size: 100%;
+}
+.main-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.main-container .half {
+  flex-grow: 2;
+  padding: 0 40px;
+}
+
+table {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}

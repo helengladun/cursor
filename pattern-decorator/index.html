@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decorator Pattern</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Input Data Block: Begin -->
+      <div class="half">
+        <h2>Input data</h2>
+        <table class="data-table table table-bordered table-responsive">
+          <tbody>
+            <tr data-name="last-visit">
+              <td>Last Visit</td>
+            </tr>
+            <tr data-name="global-discount">
+              <td>Global Discount</td>
+            </tr>
+            <tr data-name="night-discount">
+              <td>Night Discount</td>
+            </tr>
+            <tr data-name="weekend-discount">
+              <td>Weekend Discount</td>
+            </tr>
+            <tr data-name="orders-count">
+              <td>Orders Count</td>
+            </tr>
+            <tr data-name="orders-total-price">
+              <td>Orders Total Price</td>
+            </tr>
+            <tr data-name="user-bonus">
+              <td>User Bonus</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Input Data Block: End -->
+      <!-- Output Data Block: Begin -->
+      <div class="half result-data">
+        <h2>Results</h2>
+        <table class="result-table table table-bordered table-responsive">
+          <tbody>
+            <tr data-name="discount-result">
+              <td>Total Discount</td>
+            </tr>
+            <tr data-name="bonus-result">
+              <td>Total User Bonus</td>
+            </tr>
+            <tr data-name="total-bonus">
+              <td>Total Discount</td>
+            </tr>
+            <tr data-name="total-result">
+              <td>Total Price Result</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Output Data Block: End -->
+    </div>
+    <script src="js/User.js"></script>
+    <script src="js/UserDecorator.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
