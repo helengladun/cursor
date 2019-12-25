@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>People Managment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container main-container">
+      <div class="row">
+        <div class="main-center">
+          <!-- Form: Begin -->
+          <form name="management-form">
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="name" class="cols-sm-2 control-label ">Your Name</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control " id="name"  name="name" placeholder="Enter your Name"/>
+                </div>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="sex" class="cols-sm-2 control-label ">Your Sex</label>
+              <div class="cols-sm-10 input-group">
+                <span class="input-group-addon"><i class="fa fa-male fa" aria-hidden="true"></i></span>
+                <select class="form-control" id="sex" name="sex">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="birth" class="cols-sm-2 control-label">Your Birth date</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
+                  <input type="date" class="form-control" id="birth" name="birth" placeholder="Enter your Birth date"/>
+                </div>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="address" class="cols-sm-2 control-label">Your Address</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-home fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="address" name="address" placeholder="Enter your Address"/>
+                </div>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="phone" class="cols-sm-2 control-label">Your Phone</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="+380XXXXXXXXX"/>
+                </div>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group input-block col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <label for="email" class="cols-sm-2 control-label">Your Email</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email"/>
+                </div>
+                <div class="text-error"></div>
+              </div>
+            </div>
+            <div class="form-group button-block">
+              <button type="submit" class="btn btn-lg btn-primary btn-block">Save</button>
+              <button type="reset" class="btn btn-lg btn-danger btn-block">Reset</button>
+            </div>
+          </form>
+          <!-- Form: End -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="table-responsive ">
+          <!-- Table: Begin -->
+          <table class="table table-bordered hidden">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Sex</th>
+                <th>Birth</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <!-- Table: End -->
+        </div>
+      </div>
+    </div>
+    <script src="js/users.js"></script>
+    <script src="js/view.js"></script>
+  </body>
+</html>
