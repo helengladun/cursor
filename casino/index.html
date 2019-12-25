@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome to Las Vegas</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <!-- First Block: Begin -->
+    <div id="create-casino-block" class="container visible">
+      <div class="main-container">
+        <h1 class="header center orange-text text-darken-2">Welcome to Las Vegas!</h1>
+        <h5 class="header-text col s12 light"><span id="typed-text"></span></h5>
+        <div class="row center">
+          <button data-target="create-casino-modal" class="btn-large waves-effect waves-light orange darken-2">Open my own casino</button>
+          <!-- Modal Structure: Begin -->
+          <div id="create-casino-modal" class="modal">
+            <div class="modal-content">
+              <h4>Enter the value of your cash and quantity of slot machines </h4>
+              <form class="col s12 form-create-casino">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">credit_card</i>
+                    <input id="icon_credit_card" data-type="number" type="text" class="validate" name="cashNumber">
+                    <label for="icon_credit_card">Cash</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">library_add</i>
+                    <input id="icon_library_add" data-type="number" type="text" class="validate" name="quantityNumber">
+                    <label for="icon_library_add" data-error="wrong">Quantity of slot machines</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button id="create-casino-btn" class="modal-action waves-effect orange darken-1 waves-orange pulse btn-flat submit">Create</button>
+            </div>
+          </div>
+          <!-- Modal Structure: End -->
+        </div>
+      </div>
+    </div>
+    <!-- First Block: End -->
+    <!-- Second Block: Begin -->
+    <div id="opened-casino-block" class="container hidden">
+      <div class="row">
+        <!-- Info Block: Begin -->
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h1>Great! You've just opened a new casino!</h1>
+              <div class="container">
+                <div class="row">
+                  <div class="curr-balance col s6">
+                    <div class="row">
+                      <div class="text col s12">
+                        Your current balance ($)
+                      </div>
+                      <div class="value col s12">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="curr-quantity col s6">
+                    <div class="row">
+                      <div class="text col s12">
+                        Current slot machines quantity
+                      </div>
+                      <div class="value col s12">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Info Block: End -->
+        <!-- Logic Block: Begin -->
+        <div class="container">
+          <div class="row">
+            <ul class="collapsible popout" data-collapsible="accordion">
+              <!-- Casino Buttons Block: Begin -->
+              <li>
+                <div class="collapsible-header indigo active">Casino mechanics</div>
+                <div class="collapsible-body">
+                  <div class="container casino-buttons-block">
+                    <div class="text-info"></div>
+                    <div class="row">
+                      <div class="col s4">
+                        <a id="add-new-machine" class="waves-effect waves-light btn btn-large light-green darken-1">
+                          <i class="material-icons left">library_add</i>
+                          Add new
+                        </a>
+                      </div>
+                      <div class="col s4">
+                        <a id="remove-machine" class="waves-effect waves-light btn btn-large grey darken-3">
+                          <i class="material-icons left">delete</i>
+                          Remove
+                        </a>
+                      </div>
+                      <div class="col s4">
+                        <a id="take-money-casino" class="waves-effect waves-light btn btn-large cyan lighten-1">
+                          <i class="material-icons left">credit_card</i>
+                          Take money
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Casino Buttons Block: End -->
+              <!-- Slot Machine Buttons Block: Begin -->
+              <li>
+                <div class="collapsible-header indigo">Slot machine mechanics</div>
+                <div class="collapsible-body">
+                  <div class="container machine-buttons-block">
+                    <div class="text-info"></div>
+                    <div class="row buttons-line">
+                      <div class="col s6">
+                        <a id="machines-balance" class="waves-effect waves-light btn btn-large  deep-orange darken-2">
+                          <i class="material-icons left">visibility</i>
+                          Get balance
+                        </a>
+                      </div>
+                      <div class="col s6">
+                        <a id="take-money-machine" class="waves-effect waves-light btn btn-large light-blue darken-4">
+                          <i class="material-icons left">credit_card</i>
+                          Take money
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row buttons-line">
+                      <div class="col s6">
+                        <a id="put-money" class="waves-effect waves-light btn btn-large teal darken-3">
+                          <i class="material-icons left">payment</i>
+                          Put money
+                        </a>
+                      </div>
+                      <div class="col s6">
+                        <a id="play" class="waves-effect waves-light btn btn-large red darken-4">
+                          <i class="material-icons left">thumb_up</i>
+                          Play a game
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Slot Machine Buttons Block: End -->
+              <!-- Slot Machine Array Block: Begin -->
+              <li>
+                <div class="collapsible-header indigo">Slot Machines Array (Optional)</div>
+                <div class="collapsible-body">
+                  <div class="container machine-buttons-block">
+                    <div class="shown-array hidden"></div>
+                    <div class="row buttons-line">
+                      <div class="col s12">
+                        <a id="show-arr-machines" class="waves-effect waves-light btn btn-large  deep-orange darken-2">
+                          <i class="material-icons left">visibility</i>
+                          Show machines
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Slot Machine Array Block: End -->
+            </ul>
+          </div>
+        </div>
+        <!-- Logic Block: End -->
+      </div>
+    </div>
+    <!-- Second Block: End -->
+    <script src="js/slotMachineClass.js"></script>
+    <script src="js/casinoClass.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
